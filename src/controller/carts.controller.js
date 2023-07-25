@@ -4,7 +4,7 @@ import { UserService } from "../services/users.services.js";
 const Carts = new CartsService()
 const Users = new UserService()
 class CartController{
- async creatCart (req, res)  {
+ async createCart (req, res)  {
     try{
        let cartCreate = await  Carts.createOne()
         if(req?.session?.user){

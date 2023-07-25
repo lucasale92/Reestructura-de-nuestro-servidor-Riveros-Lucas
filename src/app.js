@@ -11,7 +11,7 @@ import { usersRouter } from "./routes/users.router.js";
 import { authRouter } from "./routes/auth.router.js";
 import cookieParser from 'cookie-parser';
 import session from "express-session";
-import MongoStore from 'connect-mongo'
+import MongoStore from 'connect-mongo';
 import { iniPassport } from "./config/passport.config.js";
 import passport from "passport";
 import { sessionsRouter } from "./routes/session.router.js";
