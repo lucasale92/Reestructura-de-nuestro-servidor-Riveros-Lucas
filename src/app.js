@@ -1,5 +1,5 @@
 import express from "express";
-import { prodructsRouter } from "./routes/products.router.js";
+import { productsRouter } from "./routes/products.router.js";
 import { cartsRouter } from "./routes/carts.router.js";
 import { __dirname, connectMongo } from "./utils.js";
 import path from "path";
@@ -52,7 +52,7 @@ app.engine("handlebars", handlebars.engine());
 app.set("views", path.join(__dirname, "views"))
 app.set('view engine', 'handlebars');
 
-app.use("/api/products", prodructsRouter)
+app.use("/api/products", productsRouter)
 app.use("/api/users", usersRouter)
 app.use("/api/sessions", sessionsRouter)
 app.use("/", viewsRouter)
